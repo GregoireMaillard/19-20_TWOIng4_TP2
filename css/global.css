@@ -37,14 +37,11 @@ header .user {
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 1.1em;
     color: #89949b;
     padding-top: 5px;
 }
 
-main h2 {
-    margin-top: 4px;
-}
 
 
 main article {
@@ -54,13 +51,17 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.8em;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
+aside h3{
+    font-size: 1.1em;
+}
+
 nav ul li a { 
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,14 +86,14 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 2em;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .name p img { 
@@ -102,10 +103,10 @@ h1 {
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
-    padding: 15px 0px 10px 0px;
+    font-size: 0.8em;
+    padding: 15px 20px 10px 20px;
     border-bottom: 1px solid #e1e6e9;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .stats-links span, .stats-links a {
@@ -117,13 +118,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,7 +138,7 @@ input.search {
     box-shadow: none;
     height: 28px;
     width: 100%;
-    font-size: 13px;
+    font-size: 1em;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
@@ -151,7 +152,7 @@ input.submit {
 }
 
 .station {
-    font-size: 12px;
+    font-size: 1em;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -170,9 +171,9 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 0.8em;
     color: #89949b;
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 
 #albums article img {
@@ -216,6 +217,14 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
+@media screen and (max-width: 600px){
+    .search{
+        display: none;
+    }
+}
 
-
-
+@media screen and (max-width: 500px){
+    .share{
+        display: none;
+    }
+}
